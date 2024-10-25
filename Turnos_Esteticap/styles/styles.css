@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+.body-log {
+  background-image: url("../assets/Radico.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.cont-princ {
+  width: 78vh;
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  background-color: #d2d3ce;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.form-login {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-login h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-size: 4vw;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.contenedor-controles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-login label,
+.form-login input,
+.form-login select {
+  width: 100%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.form-login input,
+.form-login select {
+  background-color: rgba(255, 255, 255, 0.863);
+  padding: 9px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.form-login select {
+  cursor: pointer;
+  color: #6b6b6b;
+}
+
+.form-login input[type="submit"] {
+  cursor: pointer;
+  background-color: #1d1b1b;
+  padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.form-login input[type="submit"]:hover {
+  background-color: #6b6b6b;
+  color: #1d1b1b;
+}
+
+.mensajes {
+  display: block;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.link-menu {
+  color: #faf6f5;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background-color: #1d1b1b;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link-menu:hover {
+  background-color: #faf6f5;
+  color: #1d1b1b;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  text-align: center;
+  color: #faf6f5;
+  margin-top: 20px;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgb(250, 246, 245, 0.5);
+  padding: 20px;
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: "Inter";
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  padding: 20px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+.service-option input[type="checkbox"] {
+  display: none;
+}
+
+.service-option {
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, border 0.3s;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-option.selected {
+  background-color: #79756c;
+  border: none;
+  border-radius: 10px;
+}
+
+.alerta {
+  color: rgb(247, 29, 29) !important;
+  text-align: center;
+}
+
+.bien {
+  color: green;
+  text-align: center;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-option {
+  flex: 1 1 calc(50% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .service-option {
+    flex: 1 1 100%;
+  }
+}
+
+.service-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  border: 1px solid black;
+}
+
+.service-option {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1 1 calc(30% - 20px);
+  margin: 10px;
+}
+
+.service-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-option img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+.service-option label {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  width: -webkit-fill-available;
+}
+
+.service-option input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #28a745;
+}
+
+.boton {
+  width: 100%;
+  background-color: #1d1b1b;
+  color: #faf6f5;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #faf6f5;
+  color: #1d1b1b;
+}
+
+@media (max-width: 600px) {
+  .formulario {
+    padding: 15px;
+  }
+
+  .service-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.service-option:before {
+  content: "✓";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #000;
+  display: none;
+}
+
+.checkbox:checked + .service-option:before {
+  display: block;
+}
+
+/* estilo menu */
+
+.logo-circulo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf6f5;
+  margin: 0 auto;
+  border: 5px solid #79756c;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto 20px;
+}
+.logo-circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-circulo:hover img {
+  transform: scale(1.1);
+}
+
+.contenedor-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 135px auto;
+  padding-top: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(250, 246, 245, 0.5);
+  border-radius: 25px;
+}
+
+.contenedor-principal div {
+  color: #faf6f5;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex; 
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: calc(30% - 25px);
+  background-color: #1d1b1b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contenedor-principal div:hover {
+  background-color: #faf6f5;
+  color: #1d1b1b; 
+}
+
+.contenedor-principal div a {
+  color: inherit; 
+  transition: color 0.3s ease; 
+}
+
+.contenedor-principal div:hover a {
+  color: #1d1b1b;
+}
+
+.contenedor-principal > div a {
+  text-decoration: none;
+  color: #faf6f5;
+}
+
+/* estilo crud */
+
+h1 {
+  text-align: center;
+  color: #faf6f5;
+  margin-bottom: 20px;
+  font-family: "Playfair Display";
+}
+
+.contprinc{
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(250, 246, 245, 0.5);
+    padding: 20px;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;  
+    align-items: center;
+}
+
+.contab {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  background-color: #d2d3ce;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.tbl thead th {
+  background-color: #79756c;
+  color: #faf6f5;
+  padding: 7px;
+  font-family: "Playfair Display";
+}
+
+.tbl tbody td {
+  padding: 7px;
+  border: 1px solid #6b6b6b;
+  font-family: "Inter";
+}
+
+.tbl tbody button {
+  background-color: #29a5c7;
+  color: #faf6f5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.2s;
+}
+
+.tbl tbody button:hover {
+  background-color: #1c7087;
+  transform: scale(1);
+}
+
+.tbl tbody a {
+  display: inline-block;
+  background-color: red;
+  color: #faf6f5;
+  font-size: small;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.4s, transform 0.2s;
+}
+.tbl tbody a:hover {
+  background-color: rgb(172, 3, 3);
+  transform: scale(1);
+}
+
+.cost,
+.act {
+  text-align: center;
+}
+
+.btncontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #1b1d1d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.btn:hover {
+  background: #faf6f5;
+  color: #1b1d1d;
+}
+.checkbox:checked + .service-option:before {
+    display: block;
+}
+
+/* estilo index */
+
+.contbien{
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: rgb(250, 246, 245, 0.5);
+    padding: 30px;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.conta{
+    background-color: #2c2a2a; 
+    font-size: 16px; 
+    padding: 12px; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #FAF6F5; 
+    transition: background-color 0.3s; 
+}
+
+.conta:hover {
+    background-color: #FAF6F5;
+}
+
+.contbien a {
+    text-decoration: none;
+    color: #FAF6F5;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.contbien a:hover {
+    color: #1d1b1b; 
+}
+
+.logo-circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf6f5;
+    margin: 0 auto;
+    border: 5px solid #79756c;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto 20px;
+  }
+  .logo-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  
+
+
+
+
